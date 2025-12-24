@@ -1,4 +1,4 @@
-# RentTrack 🚗
+ RentTrack 🚗
 
 RentTrack, araç kiralama süreçlerini takip etmek ve yönetmek için geliştirilmiş bir Android uygulamasıdır. Uygulama; araç ekleme, araç listeleme, müşteri bilgileri, kiralama oluşturma ve kiralama detaylarını görüntüleme gibi temel fonksiyonları içerir.
 
@@ -41,9 +41,8 @@ RentTrack/
 
 1. Bu repoyu klonlayın:
 
-   ```bash
-   git clone https://github.com/kullaniciadi/RentTrack.git
-   ```
+   https://github.com/AlimertYasar/RentTrack.git 
+
 2. Android Studio ile projeyi açın.
 3. Gerekli Gradle bağımlılıklarının yüklenmesini bekleyin.
 4. Uygulamayı bir emülatör veya fiziksel cihazda çalıştırın.
