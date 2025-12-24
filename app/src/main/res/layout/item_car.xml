@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp"
+    android:radius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imgCar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvCarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marka: "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCarModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCarPlate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plaka: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durum: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiralayan: "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiralama Süresi:  "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvTimeElapsed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geçen süre: "
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Düzenle"
+                android:textColor="#000000"
+                android:layout_marginEnd="8dp"/> <!-- Sağ tarafta boşluk ekledik -->
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sil"
+                android:textColor="#000000"
+                android:layout_marginStart="8dp"/> <!-- Sol tarafta boşluk ekledik -->
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" RentTrack "
+            android:textColor="@android:color/black"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:paddingVertical="24dp" />
+
+        <!-- Stats Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp"
+            android:weightSum="2"
+            android:layout_marginBottom="8dp"
+            android:gravity="center">
+
+            <!-- Kiradaki Araçlar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/card_background_kiradaki"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginEnd="8dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tvRentedCars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kiradaki Araçlar"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Müsait Araçlar -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                android:background="@drawable/card_background_musait"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tvAvailableCars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Müsait Araçlar"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#CCCCCC" />
+
+        <!-- Butonlar -->
+        <Button
+            android:id="@+id/btnMyCars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/list"
+            android:drawablePadding="12dp"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="30dp"
+            android:text="Araçlarım"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/btnKiralamaOlustur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/baseline_add_24"
+            android:drawablePadding="12dp"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="30dp"
+            android:text="Kiralama Oluştur"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnMusteriBilgileri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_button"
+            android:drawableLeft="@drawable/group"
+            android:drawablePadding="12dp"
+            android:elevation="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:padding="30dp"
+            android:text="Müşteri Bilgileri"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

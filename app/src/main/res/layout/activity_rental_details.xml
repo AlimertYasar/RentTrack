@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    tools:context=".RentalDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Araç Kiralama Bilgileri"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingVertical="24dp" />
+
+        <!-- İsim -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İsim"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Soyisim -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyisim"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kiralanacak Gün -->
+        <EditText
+            android:id="@+id/etRentalDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kiralanacak Gün Sayısı"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Kirala Butonu -->
+        <Button
+            android:id="@+id/btnRentCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirala"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:padding="16dp"
+            android:onClick="onRentCarClick"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a3c47def6e389d70abac9a5da5eb1dae",
+    "entities": [
+      {
+        "tableName": "araclar",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `marka` TEXT, `model` TEXT, `plaka` TEXT, `durum` INTEGER NOT NULL, `kiraci` TEXT, `sure` TEXT, `gecenSure` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "marka",
+            "columnName": "marka",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plaka",
+            "columnName": "plaka",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "durum",
+            "columnName": "durum",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kiraci",
+            "columnName": "kiraci",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sure",
+            "columnName": "sure",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "gecenSure",
+            "columnName": "gecenSure",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a3c47def6e389d70abac9a5da5eb1dae')"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Başlık -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiralama Oluştur"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_horizontal"/> <!-- Başlık Ortalanır -->
+
+        <!-- BMW Resmi -->
+        <ImageButton
+            android:id="@+id/btnCar1"
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bmw_3series"
+            android:background="@null"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"/> <!-- Resim Ortalanır -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMW 3 Serisi - 2022"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/> <!-- Bilgi Ortalanır -->
+
+        <!-- Audi Resmi -->
+        <ImageButton
+            android:id="@+id/btnCar2"
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/audi_a4"
+            android:background="@null"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"/> <!-- Resim Ortalanır -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Audi A4 - 2021"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/> <!-- Bilgi Ortalanır -->
+
+        <!-- Mercedes Resmi -->
+        <ImageButton
+            android:id="@+id/btnCar3"
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mercedes_cclass"
+            android:background="@null"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center_horizontal"/> <!-- Resim Ortalanır -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercedes-Benz C-Class"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/> <!-- Bilgi Ortalanır -->
+
+    </LinearLayout>
+
+    <!-- Ana menüye dön butonu en altta -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_button"
+        android:padding="15dp"
+        android:text="Ana Sayfaya Dön"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+</FrameLayout>
